@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Voting Summary</title>
+</head>
+
+<body>
+<h1>Voting Summary</h1>
+<table class='table table-responsive'>
+    <thead>
+    <tr>
+        <th>IDS</th>
+        <th>NAMEs</th>
+        <th>Votes</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="candidate: ${candidates}">
+        <td th:text="${candidate.getId()}">
+        </td>
+        <td th:text="${candidate.getName()}">
+        </td>
+        <td th:text="${candidate.getVotes()}">
+        </td>
+    </tr>
+
+    </tbody>
+</table>
+</body>
+</html>

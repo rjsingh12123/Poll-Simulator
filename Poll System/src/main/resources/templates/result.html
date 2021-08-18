@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <title>POLL RESULT</title>
+</head>
+
+<body>
+<h1>POLL RESULT</h1>
+<table class='table table-responsive'>
+  <thead>
+  <tr>
+    <th>Winner ID</th>
+    <th>Winner NAME</th>
+    <th>Winner Votes</th>
+  </tr>
+  </thead>
+  <tbody>
+
+  <tr>
+    <td th:text="${winner.getId()}">
+    </td>
+    <td th:text="${winner.getName()}">
+    </td>
+    <td th:text="${winner.getVotes()}">
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+<table class='table table-responsive'>
+  <thead>
+  <tr>
+    <th>RunnerUP IDS</th>
+    <th>RunnerUP NAMEs</th>
+    <th>RunnerUP Votes</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td th:text="${runner.getId()}">
+    </td>
+    <td th:text="${runner.getName()}">
+    </td>
+    <td th:text="${runner.getVotes()}">
+    </td>
+  </tr>
+
+  </tbody>
+</table>
+</body>
