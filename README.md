@@ -8,8 +8,9 @@ Project aim was to implement 3 tire architecture.
           iii) Result ( result.html)
           iv) voting (vote,html)
           v)  Summary (summary.html)
+          
 2)Business Logic layer (Controller)
           i) PollController
-
+          
 3)Data layer Logic 
           i)data Package
